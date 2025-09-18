@@ -35,19 +35,19 @@ import './App.css'
 // export default App
 
 
-// import { SiteHeader } from '@/components/SiteHeader'
+import { SiteHeader } from './components/siteheader'
 // import { Hero } from '@/components/Hero'
 import { CredStrip } from './components/credstrip'
 // import { Projects } from '@/components/Projects'
 import { About } from './components/about'
 import { Writing } from './components/writing'
 import { Contact } from './components/contact'
-// import { SiteFooter } from '@/components/SiteFooter'
+import { SiteFooter } from './components/sitefooter'
 
 export default function App() {
   return (
     <div className="min-h-dvh flex flex-col">
-      {/* <SiteHeader /> */}
+      <SiteHeader />
       <main className="flex-1">
         {/* <Hero /> */}
         <CredStrip />
@@ -56,7 +56,7 @@ export default function App() {
         <Writing />
         <Contact />
       </main>
-      {/* <SiteFooter /> */}
+      <SiteFooter />
     </div>
   )
 }
