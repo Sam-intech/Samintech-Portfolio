@@ -100,7 +100,7 @@ export function SiteHeader() {
           ))}
           <li className="flex gap-2 px-3 py-2">
             <Button variant="outline" className="flex-1" asChild>
-              <a href="/Sam_Sonowo_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+              <a href="https://docs.google.com/document/d/1KjAfzbX0T0dIlfjmq1RRMSIBWNsIz1SzM5H1dlxrUL4/edit?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
             </Button>
             <Button className="flex-1" asChild>
               <a href="#contact" onClick={() => setOpen(false)}>Contact</a>

@@ -23,7 +23,13 @@ export function About() {
         </div>
         <div className="rounded-2xl border aspect-video bg-gradient-to-br from-muted to-background grid place-items-center text-sm text-muted-foreground">
           {/* Drop your headshot or illustration here */}
-          Add photo / graphic
+          {/* Add photo / graphic */}
+          <img
+            // src="../assets/sam.JPG"
+            src="/sam.JPG"
+            alt="Samuel Sonowo"
+            className="h-full w-auto object-cover rounded-2xl"
+          />
         </div>
       </div>
     </Section>
