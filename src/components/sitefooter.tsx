@@ -12,7 +12,7 @@ const SOCIALS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/sonowosamuel/", icon: Linkedin },
   { label: "Email", href: "mailto:sonowosamuel@icloud.com", icon: Mail },
   // Add your GitHub repo once public:
-  // { label: "GitHub", href: "https://github.com/Sam-intech/samintech-portfolio", icon: Github },
+  { label: "GitHub", href: "https://github.com/Sam-intech", icon: Github },
 ]
 
 export function SiteFooter() {
@@ -20,9 +20,9 @@ export function SiteFooter() {
     <footer className="border-t">
       <div className="container py-12 grid gap-8 md:grid-cols-3">
         {/* Brand / Bio */}
-        <div className="space-y-3">
-          <div className="font-semibold">Sam Sonowo</div>
-          <p className="text-sm text-muted-foreground">
+        <div className="space-y-3 flex flex-col items-start">
+          <div className="font-semibold">Samuel Sonowo</div>
+          <p className="text-sm text-muted-foreground text-left">
             AI/ML Engineer with a UX Engineering background—building usable, human-centred AI products.
           </p>
         </div>
@@ -41,8 +41,8 @@ export function SiteFooter() {
 
         {/* Socials */}
         <div className="space-y-3">
-          <div className="text-sm font-medium">Connect</div>
-          <div className="flex flex-wrap gap-3">
+          <div className="text-sm font-medium">Social - connect</div>
+          <div className="flex gap-3 items-end">
             {SOCIALS.map(({ label, href, icon: Icon }) => (
               <a
                 key={label}
@@ -61,7 +61,7 @@ export function SiteFooter() {
 
       <div className="border-t">
         <div className="container py-6 text-xs text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-2">
-          <p>© {new Date().getFullYear()} Sam Sonowo. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Samuel Sonowo. All rights reserved.</p>
           <p>Built with React · Tailwind · shadcn/ui</p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X} from "lucide-react"
 // If you added the theme provider earlier, uncomment this:
 // import { ModeToggle } from "@/components/ModeToggle"
 
