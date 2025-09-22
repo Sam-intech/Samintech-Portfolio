@@ -26,7 +26,7 @@ export function About() {
           {/* Add photo / graphic */}
           <img
             // src="../assets/sam.JPG"
-            src="/sam.JPG"
+            src="/IMG_8849.JPG"
             alt="Samuel Sonowo"
             className="h-full w-auto object-cover rounded-2xl"
           />

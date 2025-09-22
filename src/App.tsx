@@ -5,22 +5,24 @@ import './App.css'
 
 
 import { SiteHeader } from './components/siteheader'
-// import { Hero } from '@/components/Hero'
+import { Hero } from './components/hero'
 import { CredStrip } from './components/credstrip'
-// import { Projects } from '@/components/Projects'
+import { Projects } from './components/projects'
 import { About } from './components/about'
 import { Writing } from './components/writing'
 // import { Contact } from './components/contact'
 import { SiteFooter } from './components/sitefooter'
+import { TechStack } from './components/techstack'
 
 export default function App() {
   return (
     <div className="min-h-dvh flex flex-col">
       <SiteHeader />
       <main className="flex-1">
-        {/* <Hero /> */}
+        <Hero />
         <CredStrip />
-        {/* <Projects /> */}
+        <Projects />
+        <TechStack />
         <About />
         <Writing />
         {/* <Contact /> */}
