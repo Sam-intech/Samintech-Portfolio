@@ -23,7 +23,9 @@ export function TechStack() {
                   .filter((t) => t.category === cat)
                   .map((t) => (
                     <li key={t.name} className="rounded-xl border bg-card/50 px-3 py-1 text-sm">
-                      {t.name}
+                      {/* {t.name} */}
+                      <img src={t.logo} alt={t.name} className="h-6 w-8 object-contain" />
+                      <span className="text-xs text-center">{t.name}</span>
                     </li>
                   ))}
               </ul>

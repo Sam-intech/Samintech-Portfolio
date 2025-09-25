@@ -5,11 +5,11 @@ export type Stack = {
 }
 
 export const techstacks: Stack[] = [
-  { name: "Python", category: "AI/ML" },
-  { name: "PyTorch", category: "AI/ML" },
-  { name: "scikit-learn", category: "AI/ML" },
-  { name: "LangChain", category: "AI/ML" },
-  { name: "Vector DBs", category: "AI/ML" },
+  { name: "Python", category: "AI/ML", logo: "/logo/vite.svg" },
+  { name: "PyTorch", category: "AI/ML", logo: "/logo/vite.svg" },
+  { name: "scikit-learn", category: "AI/ML", logo: "/logo/vite.svg" },
+  { name: "LangChain", category: "AI/ML", logo: "/logo/vite.svg" },
+  { name: "Vector DBs", category: "AI/ML", logo: "/logo/vite.svg" },
 
   { name: "React", category: "Frontend" },
   { name: "TypeScript", category: "Frontend" },
