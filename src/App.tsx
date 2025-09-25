@@ -4,20 +4,23 @@
 import './App.css'
 
 
-import { SiteHeader } from './components/siteheader'
+// import { SiteHeader } from './components/siteheader'
 import { Hero } from './components/hero'
 import { CredStrip } from './components/credstrip'
 import { Projects } from './components/projects'
 import { About } from './components/about'
 import { Writing } from './components/writing'
 // import { Contact } from './components/contact'
-import { SiteFooter } from './components/sitefooter'
+// import { SiteFooter } from './components/sitefooter'
 import { TechStack } from './components/techstack'
+import { FloatingDock } from './components/navbar'
+import { Footer } from './components/footer'
 
 export default function App() {
   return (
     <div className="min-h-dvh flex flex-col">
-      <SiteHeader />
+      {/* <SiteHeader /> */}
+      <FloatingDock />
       <main className="flex-1">
         <Hero />
         <CredStrip />
@@ -27,7 +30,8 @@ export default function App() {
         <Writing />
         {/* <Contact /> */}
       </main>
-      <SiteFooter />
+      {/* <SiteFooter /> */}
+      <Footer />
     </div>
   )
 }

@@ -23,7 +23,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="container py-20 md:py-28">
+      <div className="container flex flex-col items-start py-20 md:py-28">
         {/* Availability badge */}
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
           <span className="inline-block h-2 w-2 rounded-full bg-primary" />
@@ -31,8 +31,8 @@ export function Hero() {
         </div>
 
         {/* Main copy */}
-        <div className="max-w-100% space-y-6 flex flex-col items-center text-center">
-          <h1 className="text-4xl w-60% md:text-5xl font-semibold leading-tight">
+        <div className="max-w-100% space-y-6 flex flex-col items-start text-center">
+          <h1 className="text-4xl w-60% md:text-5xl font-semibold leading-tight text-left">
             AI/ML Engineer building usable, human-centred AI products
           </h1>
 
@@ -57,7 +57,7 @@ export function Hero() {
           </div>
 
           {/* Cred chips */}
-          <ul className="flex flex-wrap gap-2 text-xs text-muted-foreground">
+          {/* <ul className="flex flex-wrap gap-2 text-xs text-muted-foreground">
             {[
               "Python",
               "PyTorch",
@@ -78,11 +78,11 @@ export function Hero() {
                 {t}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </div>
 
         {/* Quick proof / stats */}
-        <div className="mt-10 grid max-w-100% grid-cols-3 overflow-hidden rounded-2xl border text-center text-sm">
+        {/* <div className="mt-10 grid max-w-100% grid-cols-3 overflow-hidden rounded-2xl border text-center text-sm">
           {[
             { k: "Projects", v: "8+" },
             { k: "Focus", v: "AI/ML · UX Eng" },
@@ -93,7 +93,7 @@ export function Hero() {
               <div className="text-muted-foreground">{k}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     {/* </section> */}
     </Section>
