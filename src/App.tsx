@@ -6,7 +6,7 @@ import './App.css'
 
 // import { SiteHeader } from './components/siteheader'
 import { Hero } from './components/hero'
-import { CredStrip } from './components/credstrip'
+// import { CredStrip } from './components/credstrip'
 import { Projects } from './components/projects'
 import { About } from './components/about'
 import { Writing } from './components/writing'
@@ -23,7 +23,7 @@ export default function App() {
       <FloatingDock />
       <main className="flex-1">
         <Hero />
-        <CredStrip />
+        {/* <CredStrip /> */}
         <Projects />
         <TechStack />
         <About />
