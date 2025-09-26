@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     slug: "neutrofi",
     title: "NeutroFi — AI Crypto Advisor",
-    category: "AI/ML",
+    category: "Agentic AI, Full-Stack",
     image: "src/assets/projectcover/landing.png",
     href: "https://neutrofi.vercel.app",
   },

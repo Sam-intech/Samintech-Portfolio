@@ -28,12 +28,7 @@ export function SiteHeader() {
   }, [open])
 
   return (
-    <header
-      className={[
-        "sticky top-0 z-50 w-full border-b transition-colors",
-        scrolled ? "bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-background/40"
-      ].join(" ")}
-    >
+    <header className={["sticky top-0 z-50 w-full border-b transition-colors", scrolled ? "bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-background/40" ].join(" ")}>
       <div className="container flex h-16 items-center justify-between">
         {/* Brand */}
         <a href="#" className="font-semibold tracking-tight">

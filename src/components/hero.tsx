@@ -22,10 +22,10 @@ export function Hero() {
           <div className="flex flex-col w-full justify-start items-start">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border bg-card/60 px-3 py-1 text-xs text-muted-foreground">
               <span className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-green-400 to-lime-300 animate-pulse" />
-              Available for AI/ML Engineer roles · London / Remote
+              Available for AI/ML Engineer roles · England / Remote
             </div>
             <div className="flex items-center gap-4">
-              <img src="../assets/IMG_8849.JPG" alt="Sam Sonowo" className="h-14 w-14 rounded-full border object-cover"/>
+              <img src="src/assets/IMG_8849.JPG" alt="Sam Sonowo" className="h-14 w-14 rounded-full border object-cover"/>
               <div className="flex flex-col leading-tight items-start">
                 <p className="text-xl font-semibold">Samuel Sonowo</p>
                 <p className="text-sm text-muted-foreground">AI/ML Engineer</p>
