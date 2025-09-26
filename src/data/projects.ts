@@ -1,34 +1,28 @@
 export type Project = {
   slug: string
   title: string
-  blurb: string
+  // blurb: string
   category: string
-  tags: string[]
-  stack: string[]
-  links?: { label: string; href: string }[]
+  // tags: string[]
+  // stack: string[]
+  // links?: { label: string; href: string }[]
   image?: string
+  href: string
 }
 
 export const projects: Project[] = [
   {
     slug: "neutrofi",
     title: "NeutroFi — AI Crypto Advisor",
-    blurb: "Multi-agent analysis combining sentiment, news, and technicals; Streamlit prototype with clear buy/hold/sell signals.",
-    category: "AI Systems",
-    tags: ["Agents", "RAG", "Sentiment"],
-    stack: ["Python", "LangChain", "Streamlit"],
-    links: [{ label: "Case study", href: "#" }],
-    image: "/images/neutrofi.png", // add to public/images
+    category: "AI/ML",
+    image: "src/assets/projectcover/landing.png",
+    href: "https://neutrofi.vercel.app",
   },
   {
-    slug: "neutrofi",
-    title: "NeutroFi — AI Crypto Advisor",
-    blurb: "Multi-agent analysis combining sentiment, news, and technicals; Streamlit prototype with clear buy/hold/sell signals.",
-    category: "AI Systems",
-    tags: ["Agents", "RAG", "Sentiment"],
-    stack: ["Python", "LangChain", "Streamlit"],
-    links: [{ label: "Case study", href: "#" }],
-    image: "/images/neutrofi.png", // add to public/images
+    slug: "seams-reivew",
+    title: "Seams Review Sentiment Analysis",
+    category: "Machine Learning",
+    image: "src/assets/projectcover/seamscover.png",
+    href: "https://voteable.xyz",
   },
-  // repeat for others…
 ]

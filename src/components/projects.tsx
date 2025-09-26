@@ -1,102 +1,33 @@
-// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-// import { Badge } from "./ui/badge"
-// import { projects } from "../data/projects"
-// import { Section } from "./section"
-
-
-// export function Projects() {
-//     return (
-//         <Section id="projects">
-//             <div className="container py-16">
-//                 <div className="mb-8">
-//                     <h2 className="text-2xl font-semibold">Featured Projects</h2>
-//                     <p className="text-sm text-muted-foreground">
-//                     Selected work spanning multi-agent AI systems, UX engineering, and production-ready frontends.
-//                     </p>
-//                 </div>
-
-
-//                 <div className="grid gap-6 md:grid-cols-2">
-//                     {projects.map((p) => (
-//                         <Card key={p.slug} className="flex flex-col justify-between">
-//                             <CardHeader>
-//                                 <CardTitle>{p.title}</CardTitle>
-//                                 <CardDescription>{p.blurb}</CardDescription>
-//                             </CardHeader>
-//                             <CardContent>
-//                                 <div className="flex flex-wrap gap-2 mb-4">
-//                                     {p.tags.map((t) => (
-//                                         <Badge key={t}>{t}</Badge>
-//                                     ))}
-//                                 </div>
-//                                 {p.link && (
-//                                     <a
-//                                         href={p.link}
-//                                         className="text-sm text-primary hover:underline"
-//                                     >
-//                                         View case study →
-//                                     </a>
-//                                 )}
-//                             </CardContent>
-//                         </Card>
-//                     ))}
-//                 </div>
-//             </div>
-//         </Section>
-//     )
-// }
-
 import { Section } from "./section"
 import { projects } from "../data/projects"
-import { Badge } from "./ui/badge"
+// import { Badge } from "./ui/badge"
+import { ArrowRight } from "lucide-react"
+// import { Link } from "react-router-dom"
 
 export function Projects() {
   return (
-    <Section id="projects">
-      <div className="container py-20 space-y-16">
-        <div className="flex flex-col items-center text-center space-y-4">
-          <h2 className="text-3xl font-semibold">Featured Projects</h2>
-          <p className="mt-2 text-muted-foreground text-sm max-w-lg">
-            Selected work spanning multi-agent AI systems, data-driven UX, and
-            production-ready frontends.
-          </p>
-        </div>
+    <Section id="projects" className="container flex flex-col justify-center items-start py-16">
+      <div className="w-full mb-8 flex items-center justify-between">
+        <h2 className="text-2xl font-semibold">Featured Projects</h2>
+        <a href="/projects" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition">
+          View all <ArrowRight className="h-4 w-4" />
+        </a>
+      </div>
+      <div className="w-full grid gap-5 md:grid-cols-2">
+        {projects.map((p) => (
+          <a key={p.slug} href={`/projects/${p.slug}`} className="p-3 group relative overflow-hidden rounded-2xl border transition h-80">
+            <img src={p.image} alt={p.title} className="h-full w-full rounded-2xl object-cover mt-10 mb-1 transition duration-500 group-hover:scale-105"/>
 
-        <div className="flex items-center gap-12">
-          {projects.map((p) => (
-            <div key={p.slug} className="grid gap-6 md:grid-cols-2 md:items-center">
-              {/* image/thumbnail */}
-              <div className="relative aspect-video rounded-2xl border bg-gradient-to-br from-muted to-background" />
-              
-              {/* copy */}
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">{p.title}</h3>
-                <p className="text-muted-foreground">{p.blurb}</p>
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/60 z-10" />
 
-                <div className="flex flex-wrap gap-2">
-                  {p.tags.map((t) => (
-                    <Badge key={t}>{t}</Badge>
-                  ))}
-                </div>
-
-                <div className="text-xs text-muted-foreground">
-                  Stack: {p.stack.join(" · ")}
-                </div>
-
-                {p.links && (
-                  <div className="flex flex-wrap gap-4 pt-2 text-sm">
-                    {p.links.map((l) => (
-                      <a key={l.href} href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noreferrer" : undefined} 
-                      className="underline underline-offset-4 hover:no-underline">
-                        {l.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
+            {/* Overlay */}
+            <div className="w-full absolute inset-0 flex flex-col justify-end items-start p-4 z-20">
+              <h3 className="text-xl font-bold text-white">{p.title}</h3>
+              <p className="text-sm text-white/80">{p.category}</p>
             </div>
-          ))}
-        </div>
+          </a>
+        ))}
       </div>
     </Section>
   )
