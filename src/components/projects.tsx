@@ -14,18 +14,18 @@ export function Projects() {
         </a>
       </div>
       {/* Grid */}
-      <div className="w-full grid gap-6 md:gap-8 md:grid-cols-2 pb-10">
+      <div className="w-full grid gap-2 md:gap-3 md:grid-cols-2 pb-10">
         {projects.map((p) => (
           <a key={p.slug} href={`/projects/${p.slug}`}
             className={[
               "group relative overflow-hidden rounded-3xl border border-[#232323] transition",
               // card height
-              "h-[22rem] md:h-[28rem]",
+              "min-h-[550px]",
               // card base tone (distinct from page #151515 but close)
               "bg-[#1b1b1b]",
               // subtle outer ring for pop
               "ring-1 ring-white/5 hover:ring-white/10",
-              "shadow-[0_10px_30px_rgba(0,0,0,.25)]",
+              // "shadow-[0_10px_30px_rgba(0,0,0,.25)]",
             ].join(" ")}
           >
             {/* Top bar: dotted left + label + hover arrow right */}
@@ -44,7 +44,7 @@ export function Projects() {
 
             {/* Media wrapper (keeps image fully visible) */}
             <div className="relative h-full w-full p-3 pt-20">
-              <div className="relative h-full w-full overflow-hidden rounded-[1.25rem] bg-[#191919]">
+              <div className="relative h-full w-full overflow-hidden rounded-2xl bg-[#191919]">
                 {/* Full image: not cropped */}
                 <img
                   src={p.image}
