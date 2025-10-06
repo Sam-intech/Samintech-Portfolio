@@ -1,16 +1,8 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 
-
-// import { SiteHeader } from './components/siteheader'
 import { Hero } from './components/hero'
-// import { CredStrip } from './components/credstrip'
 import { Projects } from './components/projects'
 import { BlogPosts } from './components/blogposts'
-// import { Contact } from './components/contact'
-// import { SiteFooter } from './components/sitefooter'
 import { TechStack } from './components/techstack'
 import { FloatingDock } from './components/navbar'
 import { Footer } from './components/footer'

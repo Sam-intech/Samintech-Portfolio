@@ -11,10 +11,10 @@ function rowsOf<T>(arr: T[], perRow: number) {
 function AppCell({ item }: { item: TechStack }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="grid h-11 w-11 place-items-center rounded-2xl border bg-[#191919]">
-        <img src={item.logo} alt="" className="h-6 w-6 object-contain" loading="lazy" />
+      <div className="grid h-11 w-11 place-items-center rounded-2xl border border-[#232323] bg-[#191919]">
+        <img src={item.logo} alt="" className="h-full w-full object-cover rounded-xl" loading="lazy" />
       </div>
-      <div>
+      <div className="flex flex-col items-start">
         <div className="text-[15px] leading-tight">{item.name}</div>
         {item.subtitle && <div className="text-xs text-white/60">{item.subtitle}</div>}
       </div>
@@ -52,11 +52,11 @@ export function TechStack() {
                 {pairs.map((pair, rIdx) => {
                   const isLastRow = rIdx === pairs.length - 1
                   return (
-                    <div key={rIdx} className={["grid grid-cols-1 md:grid-cols-2",!isLastRow ? "border-b border-white/10" : "",].join(" ")}>
+                    <div key={rIdx} className={["grid grid-cols-1 md:grid-cols-2",!isLastRow ? "border-b border-[#232323]" : "",].join(" ")}>
                       {pair.map((item, cIdx) => {
                         const isRightCol = cIdx === 1
                         return (
-                          <div key={item.name} className={["p-4 md:p-5", isRightCol ? "md:border-l md:border-white/10" : "",].join(" ")}>
+                          <div key={item.name} className={["p-4 md:p-5", isRightCol ? "md:border-l md:border-[white/10]" : "",].join(" ")}>
                             <AppCell item={item} />
                           </div>
                         )

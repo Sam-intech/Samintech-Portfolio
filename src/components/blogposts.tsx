@@ -13,7 +13,6 @@ function formatDate(iso: string) {
 export function BlogPosts() {
   return (
     <Section id="writing" className="container py-14 md:py-20">
-      {/* header row (optional) */}
       <div className="mb-8 flex items-center justify-between">
         <h2 className="text-2xl font-semibold">Blogposts</h2>
         <a
@@ -25,16 +24,13 @@ export function BlogPosts() {
       </div>
 
       {/* 1 / 2 / 3 columns */}
-      <div className="flex justify-between items-start flex-no-wrap gap-3">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((p) => {
           const link = p.href || `/blog/${p.slug}`
           return (
-            <a key={p.slug} href={link}
-              className={["group w-full transition",
-              ].join(" ")}
-            >
-              {/* inner panel */}
-              <div className="min-h-[450px] flex flex-col justify-between rounded-2xl border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5 p-1 ">
+            <a key={p.slug} href={link} className="group block w-full transition">
+              {/* card */}
+              <div className="relative overflow-hidden min-h-[450px] flex flex-col justify-between rounded-2xl border border-[#232323] bg-[#1b1b1b] focus:outline-none focus-visible:outline-none p-2">
                 {/* label row */}
                 <div className="flex items-center justify-between px-2 pt-2">
                   <div className="flex items-center gap-2 text-sm text-white/70">
@@ -46,22 +42,15 @@ export function BlogPosts() {
 
                 {/* body */}
                 <div className="flex flex-col items-start gap-2 px-2 pb-6 pt-8">
-                  <div className="mb-2 text-sm text-white/50">
-                    {formatDate(p.date)}
-                  </div>
-
-                  {/* big serif title like the reference */}
+                  <div className="mb-2 text-sm text-white/50">{formatDate(p.date)}</div>
                   <h3 className="text-left text-2xl md:text-3xl font-semibold leading-tight tracking-tight text-white">
                     {p.title}
                   </h3>
-
-                  <p className="text-left text-white/70 leading-tight">
-                    {p.excerpt}
-                  </p>
+                  <p className="text-left text-white/70 leading-tight">{p.excerpt}</p>
                 </div>
 
-                {/* subtle inner outline for the “glass” feel */}
-                <div className="pointer-events-none absolute inset-0 rounded-[1.6rem] ring-1 ring-white/8" />
+                {/* inner outline (now clipped to the card) */}
+                <div className="pointer-events-none absolute inset-0 rounded-2xl border border-[#232323]" />
               </div>
             </a>
           )
