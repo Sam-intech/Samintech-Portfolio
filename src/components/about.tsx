@@ -2,7 +2,7 @@ import { Section } from "./section"
 
 export function About() {
   return (
-    <Section id="about" className="container py-14 md:py-20">
+    <Section id="about" className="container py-14">
       {/* Outer frame */}
       <div className="min-h-[450px] rounded-3xl border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5 p-1">
         {/* Media card */}

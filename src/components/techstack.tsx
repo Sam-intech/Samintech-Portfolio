@@ -32,14 +32,14 @@ export function TechStack() {
       </div>
 
       {/* One card per group (stacked vertically) */}
-      <div className="flex justify-center items-start flex-no-wrap gap-3">
+      <div className="flex w-full justify-between items-start flex-no-wrap gap-3">
         {Stack.map((group) => {
           // two columns like your reference (collapses to 1 on small screens)
           const pairs = rowsOf(group.items, 2)
           return (
             <div
               key={group.title}
-              className="rounded-2xl border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5 p-3 min-h-[450px] flex flex-col justify-between gap-full"
+              className="w-full min-h-[450px] flex flex-col justify-between gap-full rounded-2xl p-2 border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5"
             >
               {/* bookmark label row INSIDE the frame */}
               <div className="mb-3 flex items-center gap-2 text-sm text-white/70">

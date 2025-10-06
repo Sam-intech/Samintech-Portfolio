@@ -8,7 +8,7 @@ import './App.css'
 import { Hero } from './components/hero'
 // import { CredStrip } from './components/credstrip'
 import { Projects } from './components/projects'
-import { Writing } from './components/writing'
+import { BlogPosts } from './components/blogposts'
 // import { Contact } from './components/contact'
 // import { SiteFooter } from './components/sitefooter'
 import { TechStack } from './components/techstack'
@@ -16,31 +16,46 @@ import { FloatingDock } from './components/navbar'
 import { Footer } from './components/footer'
 import { Experience} from './components/experience'
 import { About } from './components/about'
+import { Section } from "./components/section"
+import { Socials } from "./components/socials"
+import { Hobbies } from "./components/hobbies"
+import { DesignShots } from "./components/designshots"
+
 
 export default function App() {
   return (
     <div className="min-h-dvh flex flex-col">
-      {/* <SiteHeader /> */}
       <FloatingDock />
       <main className="flex-1">
         <Hero />
-        {/* <CredStrip /> */}
         <Projects />
         <TechStack />
-        <div id="experience" className='flex justify-between items-stretch gap-0'>
-          <div className="basis-[400px] shrink-o">
+        <Section id="experience" className='container flex justify-between items-center p-0'>
+          <div className="basis-[400px] shrink-o pl-0">
             <Experience />
           </div>
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 pr-0">
             <div className="h-full">
               <About />
             </div>
           </div>
-        </div>
-        <Writing />
-        {/* <Contact /> */}
+        </Section>
+        <BlogPosts />
+        <Section id="final" className="container flex flex-col justify-between items-start py-14 mb-20">
+          <h2 className="mb-8 text-2xl font-semibold">Extras</h2>
+          <div className="w-full flex justify-between items-stretch gap-2">
+            <div className="flex-1">
+              <Socials />
+            </div>
+            <div className="flex-1">
+              <Hobbies />
+            </div>
+            <div className="flex-1">
+              <DesignShots />
+            </div>
+          </div>
+        </Section>
       </main>
-      {/* <SiteFooter /> */}
       <Footer />
     </div>
   )

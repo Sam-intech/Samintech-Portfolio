@@ -1,27 +1,37 @@
 export type Post = {
   slug: string
   title: string
-  blurb: string
-  date: string
+  excerpt: string
+  date: string          // ISO: "2025-09-12"
+  tag?: string
+  image: string         // /blog/slug.jpg
+  href?: string         // external override; if absent, use /blog/:slug
 }
 
 export const posts: Post[] = [
   {
-    slug: "ux-patterns-for-llm-apps",
-    title: "UX Patterns for LLM Apps",
-    blurb: "Design choices that improve trust, comprehension, and control in AI interfaces.",
-    date: "2025-09-10",
+    slug: "human-centered-rag",
+    title: "Human-Centered RAG: Patterns for Trust",
+    excerpt: "Designing retrieval flows and UI affordances that make LLM answers explainable and auditable.",
+    date: "2025-08-21",
+    tag: "AI/UX",
+    image: "/blog/rag-trust.jpg",
   },
   {
-    slug: "evaluating-agentic-systems",
-    title: "Evaluating Agentic Systems",
-    blurb: "Lightweight eval loops and metrics beyond accuracy: latency, reliability, UX signals.",
-    date: "2025-08-29",
+    slug: "agents-in-the-wild",
+    title: "Agents in the Wild: Orchestrating Multi-Agent Systems",
+    excerpt: "How to scope tasks, route tools, and evaluate behaviors before production.",
+    date: "2025-06-10",
+    tag: "Agents",
+    image: "/blog/agents.jpg",
   },
   {
-    slug: "streamlit-to-react-migrations",
-    title: "Streamlit → React Migrations",
-    blurb: "When to keep Streamlit and when to move to a typed React front-end.",
-    date: "2025-08-18",
+    slug: "ux-for-ml",
+    title: "UX for ML Interfaces",
+    excerpt: "From affordances to guardrails: patterns that turn models into products.",
+    date: "2025-04-03",
+    tag: "UX",
+    image: "/blog/ux-ml.jpg",
   },
+  // add more…
 ]
