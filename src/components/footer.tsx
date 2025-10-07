@@ -8,17 +8,16 @@ export function Footer() {
       /> */}
 
       <div className="container py-5">
-        <div className="flex items-center justify-between text-sm">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between text-xs sm:text-sm">
           <p className="flex items-center gap-2 text-foreground/90">
             <span aria-hidden>©</span> {year} Samuel Sonowo. All Rights Reserved.
           </p>
-
-          <p>Built with React · Tailwind · shadcn/ui</p>
+          <p className="text-foreground/70">Built with React · Tailwind · shadcn/ui</p>
         </div>
       </div>
 
       {/* spacing so the floating dock never overlaps the footer */}
-      {/* <div className="h-16 md:h-20" /> */}
+      {/* <div className="h-14 sm:h-16 md:h-20" /> */}
     </footer>
   )
 }

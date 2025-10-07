@@ -31,15 +31,15 @@ export function TechStack() {
         <span className="text-sm text-muted-foreground">Core tools I use daily</span>
       </div>
 
-      {/* One card per group (stacked vertically) */}
-      <div className="flex w-full justify-between items-start flex-no-wrap gap-3">
+      {/* One card per group (stacked vertically on mobile, horizontal on desktop) */}
+      <div className="flex flex-col md:flex-row w-full items-stretch gap-4">
         {Stack.map((group) => {
           // two columns like your reference (collapses to 1 on small screens)
           const pairs = rowsOf(group.items, 2)
           return (
             <div
               key={group.title}
-              className="w-full min-h-[450px] flex flex-col justify-between gap-full rounded-2xl p-2 border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5"
+              className="flex-1 min-h-[350px] flex flex-col justify-between gap-4 rounded-2xl p-2 sm:p-4 border border-[#232323] bg-[#1b1b1b] ring-1 ring-white/5"
             >
               {/* bookmark label row INSIDE the frame */}
               <div className="mb-3 flex items-center gap-2 text-sm text-white/70">
@@ -52,17 +52,17 @@ export function TechStack() {
                 {pairs.map((pair, rIdx) => {
                   const isLastRow = rIdx === pairs.length - 1
                   return (
-                    <div key={rIdx} className={["grid grid-cols-1 md:grid-cols-2",!isLastRow ? "border-b border-[#232323]" : "",].join(" ")}>
+                    <div key={rIdx} className={["grid grid-cols-1 sm:grid-cols-2",!isLastRow ? "border-b border-[#232323]" : "",].join(" ")}>
                       {pair.map((item, cIdx) => {
                         const isRightCol = cIdx === 1
                         return (
-                          <div key={item.name} className={["p-4 md:p-5", isRightCol ? "md:border-l md:border-[white/10]" : "",].join(" ")}>
+                          <div key={item.name} className={["p-3 sm:p-4 md:p-5", isRightCol ? "border-l border-[#232323]" : "",].join(" ")}>
                             <AppCell item={item} />
                           </div>
                         )
                       })}
                       {/* keep grid balanced if odd count */}
-                      {pair.length === 1 && <div className="hidden md:block" />}
+                      {pair.length === 1 && <div className="hidden sm:block" />}
                     </div>
                   )
                 })}

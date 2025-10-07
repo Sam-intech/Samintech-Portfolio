@@ -9,14 +9,27 @@ const config: Config = {
     './src/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
   ],
+  
   theme: {
   	container: {
-  		center: true,
-  		padding: '1rem',
+  		center: false,
+  		padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        md: '1.5rem',
+        lg: '2rem',
+        xl: '2rem',
+      },
+
   		screens: {
-  			'2xl': '1280px'
-  		}
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
+        xl: '100%',
+  			'2xl': '100%',
+  		},
   	},
+
   	extend: {
   		colors: {
   			border: 'hsl(var(--border))',

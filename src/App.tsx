@@ -22,11 +22,13 @@ export default function App() {
         <Hero />
         <Projects />
         <TechStack />
-        <Section id="experience" className='container flex justify-between items-center p-0'>
-          <div className="basis-[400px] shrink-o pl-0">
+        <Section id="experience"
+          className="container flex flex-col gap-1 md:flex-row  md:gap-0 justify-between items-start md:items-center px-0 py-20"
+        >
+          <div className="w-full md:basis-[400px] md:shrink-0 md:pl-0 mb-6 md:mb-0">
             <Experience />
           </div>
-          <div className="flex-1 min-w-0 pr-0">
+          <div className="w-full md:flex-1 md:min-w-0 md:pr-0 md:pt-0">
             <div className="h-full">
               <About />
             </div>
@@ -35,7 +37,7 @@ export default function App() {
         <BlogPosts />
         <Section id="final" className="container flex flex-col justify-between items-start py-14 mb-20">
           <h2 className="mb-8 text-2xl font-semibold">Extras</h2>
-          <div className="w-full flex justify-between items-stretch gap-2">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-stretch gap-4">
             <div className="flex-1">
               <Socials />
             </div>

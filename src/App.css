@@ -1,9 +1,19 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+
+/* Remove global container padding from Vite default root */
+#root {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  text-align: left;
 }
+
 
 .logo {
   height: 6em;
