@@ -1,18 +1,8 @@
 import { Mail, FileText } from "lucide-react"
 import { Button } from "./ui/button"
-// import { useEffect, useState } from "react"
 
-// const WORDS = ["AI Systems", "Machine Learning", "UX Engineering"]
 
 export function Hero() {
-  // const [index, setIndex] = useState(0)
-
-  // useEffect(() => {
-  //   const id = setInterval(() => {
-  //     setIndex((i) => (i + 1) % WORDS.length)
-  //   }, 2500)
-  //   return () => clearInterval(id)
-  // }, [])
 
   return (
     <section className="relative border-b bg-background">
@@ -35,7 +25,7 @@ export function Hero() {
 
 
           {/* Headline */}
-          <h1 className="max-w-3xl text-3xl md:text-4xl font-medium leading-snug text-left">
+          <h1 className="w-[500px] text-3xl font-medium leading-snug text-left">
             Blending technical excellence with product vision.
             {/* I help teams turn complex models into intuitive, user-focused solutions that drive real business impact. */}
             {/* <span className="block mt-2 text-primary font-bold animate-fade">{WORDS[index]}</span> */}
