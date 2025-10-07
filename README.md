@@ -1,69 +1,95 @@
-# React + TypeScript + Vite
+# 🧠 Samuel Sonowo — AI/ML Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website — a space that blends **technical engineering** with **product design sensibility**.  
+Built to showcase my work at the intersection of **AI**, **UX Engineering**, and **Frontend Development**.
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [samuelsonowo.netlify.app](https://samuelsonowo.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React + TypeScript  
+- **Styling:** Tailwind CSS + Shadcn/UI components  
+- **Icons:** Lucide React  
+- **Deployment:** Netlify  
+- **Package Manager:** npm  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧩 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ✨ Minimal dark aesthetic with soft contrast and depth  
+- 🧠 About & Experience section with interactive timeline  
+- 🧰 Tech Stack grid showcasing tools and frameworks  
+- 📚 Blog section with three featured articles  
+- 🎨 Extras section including socials, hobbies, and design shots  
+- ⚙️ Fully responsive and accessible layout  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
+src/
+├── components/
+│ ├── hero.tsx
+│ ├── projects.tsx
+│ ├── blogposts.tsx
+│ ├── experience.tsx
+│ ├── about.tsx
+│ ├── techstack.tsx
+│ ├── socials.tsx
+│ ├── hobbies.tsx
+│ ├── designshots.tsx
+│ └── section.tsx
+├── data/
+│ ├── experience.ts
+│ ├── posts.ts
+│ └── tech.ts
+├── App.tsx
+├── index.css
+└── main.tsx
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+---
+
+## 🧱 Local Development
+
+Clone and run the project locally:
+
+```bash
+# Clone repository
+git clone https://github.com/Sam-intech/Samintech-Portfolio.git
+
+# Navigate into folder
+cd Samintech-Portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+
+Visit http://localhost:5173
+ (or your Vite dev port).
+
+🌑 Design System
+
+Primary Background: #151515
+Card Background: #1b1b1b / #191919
+Border: #232323
+Text Colors:
+  Main: #FFFFFF
+  Secondary: #FFFFFFCC (≈80% opacity)
+  Accent (Links): #4A90E2 or soft blue highlights
+
+
+💡 Inspiration
+The layout and component patterns are inspired by clean AI-focused portfolio design systems, combining UX clarity and AI engineering identity.
+
+
+🧑‍💻 Author
+Samuel Sonowo
+AI/ML Engineer | UX Engineer
+📍 Maidstone, UK
+🔗 LinkedIn • Twitter/X
