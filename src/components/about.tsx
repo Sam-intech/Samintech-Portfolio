@@ -8,12 +8,7 @@ export function About() {
         {/* Media card */}
         <div className="relative overflow-hidden rounded-3xl h-full w-full min-h-[450px]">
           {/* Image (collage) */}
-          <img
-            src="src/assets/samtower.jpeg"
-            alt="Image of sam at tower bridge"
-            className="absolute inset-0 w-full h-full object-cover"
-            loading="eager"
-          />
+          <img src="/samtower.jpeg" alt="Image of sam at tower bridge" className="absolute inset-0 w-full h-full object-cover" loading="eager"/>
 
           {/* Soft bottom gradient for legibility */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />

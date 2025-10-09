@@ -18,13 +18,15 @@ export function DesignShots() {
 
         {/* Media */}
         <div className="relative overflow-hidden rounded-2xl min-h-[380px] h-full">
-          <img src="/shots/collage.jpg" alt="Dribbble shots collage"
-            className="w-full h-full object-cover"
+          <img
+            src="/Designcover.jpg"
+            alt="Dribbble shots collage"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="pointer-events-none absolute inset-0 bg-black/40" />
           <div className="absolute left-0 bottom-0 flex flex-col items-start gap-1 p-5">
-            <h3 className="text-4xl font-semibold text-white tracking-tight">Explorations</h3>
-            <p className="text-white/85">On Dribbble</p>
+            <h3 className="text-4xl font-semibold text-white tracking-tight">Once a Creative</h3>
+            <p className="text-white/85">Check out shots on Dribbble</p>
           </div>
         </div>
       </a>

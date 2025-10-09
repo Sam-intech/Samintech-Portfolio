@@ -14,7 +14,7 @@ export function Hero() {
               Available for AI/ML Engineer roles · England / Remote
             </div>
             <div className="flex items-center gap-4 sm:gap-10">
-              <img src="src/assets/IMG_8849.JPG" alt="Sam Sonowo" className="h-14 w-14 rounded-full border object-cover"/>
+              <img src="/samavatar.JPG" alt="Samuel Sonowo" className="h-14 w-14 rounded-full border object-cover"/>
               <div className="flex flex-col leading-tight items-start">
                 <p className="text-xl font-semibold, sm:text-xl">Samuel Sonowo</p>
                 <p className="text-sm text-muted-foreground, sm:text-sm">AI/ML Engineer</p>

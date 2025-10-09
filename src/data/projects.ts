@@ -15,14 +15,14 @@ export const projects: Project[] = [
     slug: "neutrofi",
     title: "NeutroFi — AI Crypto Advisor",
     category: "Agentic AI, Full-Stack",
-    image: "src/assets/projectcover/landing.png",
+    image: "/projectcover/landing.png",
     href: "https://neutrofi.vercel.app",
   },
   {
     slug: "seams-reivew",
     title: "Seams Review Sentiment Analysis",
     category: "Machine Learning",
-    image: "src/assets/projectcover/seamscover.png",
+    image: "/projectcover/seamscover.png",
     href: "https://voteable.xyz",
   },
 ]
