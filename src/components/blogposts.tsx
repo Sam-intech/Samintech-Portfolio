@@ -24,7 +24,7 @@ export function BlogPosts() {
       </div>
 
       {/* 1 / 2 / 3 columns */}
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((p) => {
           const link = p.href || `/blog/${p.slug}`
           return (

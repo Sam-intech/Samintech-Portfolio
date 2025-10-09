@@ -37,7 +37,7 @@ export default function App() {
         <BlogPosts />
         <Section id="final" className="container flex flex-col justify-between items-start py-14 mb-20">
           <h2 className="mb-8 text-2xl font-semibold">Extras</h2>
-          <div className="w-full flex flex-col sm:flex-row justify-between items-stretch gap-4">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-stretch gap-5">
             <div className="flex-1">
               <Socials />
             </div>

@@ -14,7 +14,7 @@ export function Projects() {
         </a>
       </div>
       {/* Grid */}
-      <div className="w-full grid gap-2 md:gap-3 md:grid-cols-2 pb-10">
+      <div className="w-full grid gap-5 md:gap-3 md:grid-cols-2 pb-10">
         {projects.map((p) => (
           <a key={p.slug} href={`/projects/${p.slug}`}
             className={[

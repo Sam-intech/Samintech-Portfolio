@@ -32,7 +32,7 @@ export function TechStack() {
       </div>
 
       {/* One card per group (stacked vertically on mobile, horizontal on desktop) */}
-      <div className="flex flex-col md:flex-row w-full items-stretch gap-4">
+      <div className="flex flex-col md:flex-row w-full items-stretch gap-5">
         {Stack.map((group) => {
           // two columns like your reference (collapses to 1 on small screens)
           const pairs = rowsOf(group.items, 2)
