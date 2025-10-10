@@ -3,11 +3,12 @@ export type Project = {
   title: string
   // blurb: string
   category: string
-  // tags: string[]
+  tags?: string[]
   // stack: string[]
   // links?: { label: string; href: string }[]
   image?: string
   href: string
+  description?: string
 }
 
 export const projects: Project[] = [

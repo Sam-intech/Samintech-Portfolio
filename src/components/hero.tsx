@@ -34,12 +34,18 @@ export function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-3">
-          <Button asChild variant="secondary">
+          <Button asChild 
+            variant="secondary"
+            className="group relative overflow-hidden rounded-full bg-[#1b1b1b] border border-[#2a2a2a] text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#333]"
+            // href="mailto:sonowosamuel@icloud.com"
+          >
             <a href="mailto:sonowosamuel@icloud.com" className="flex items-center gap-2">
               <Mail className="h-4 w-4" /> Connect
             </a>
           </Button>
-          <Button asChild>
+          <Button asChild
+            className="group relative overflow-hidden rounded-full bg-[#232323] text-[#00000] font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#333333]"
+          >
             <a href="https://docs.google.com/document/d/1KjAfzbX0T0dIlfjmq1RRMSIBWNsIz1SzM5H1dlxrUL4/edit?usp=sharing" target="_blank" rel="noreferrer" className="flex items-center gap-2">
               <FileText className="h-4 w-4" /> Resume
             </a>
