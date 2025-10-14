@@ -26,29 +26,6 @@ Built to showcase my work at the intersection of **AI**, **UX Engineering**, and
 - 🎨 Extras section including socials, hobbies, and design shots  
 - ⚙️ Fully responsive and accessible layout  
 
----
-
-## 📁 Project Structure
-src/
-├── components/
-│ ├── hero.tsx
-│ ├── projects.tsx
-│ ├── blogposts.tsx
-│ ├── experience.tsx
-│ ├── about.tsx
-│ ├── techstack.tsx
-│ ├── socials.tsx
-│ ├── hobbies.tsx
-│ ├── designshots.tsx
-│ └── section.tsx
-├── data/
-│ ├── experience.ts
-│ ├── posts.ts
-│ └── tech.ts
-├── App.tsx
-├── index.css
-└── main.tsx
-
 
 ---
 
