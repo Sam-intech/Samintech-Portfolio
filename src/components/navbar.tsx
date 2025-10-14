@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { Bookmark, Grid3X3, Pencil, Sparkles, Ellipsis } from "lucide-react"
+// ===================================================
+
 
 // optional: pass links/handlers via props if you like
 export function FloatingDock() {

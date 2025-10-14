@@ -1,6 +1,8 @@
 import { socials } from "../data/socials"
 import { Section } from "../components/section"
 import { Mail, Instagram, Linkedin, ExternalLink, CircleSlash2 } from "lucide-react"
+// ===================================================
+
 
 function SocialIcon({ kind }: { kind: "x" | "instagram" | "linkedin" | "mail" }) {
   if (kind === "instagram") return <Instagram className="h-4 w-4" />

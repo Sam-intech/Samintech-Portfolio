@@ -1,6 +1,8 @@
 import { Section } from "./section"
 import { Stack, type TechStack } from "../data/stack"
 import { Bookmark } from "lucide-react"
+// ===================================================
+
 
 function rowsOf<T>(arr: T[], perRow: number) {
   const out: T[][] = []

@@ -3,6 +3,8 @@ import { Button } from "./ui/button"
 import { Menu, X} from "lucide-react"
 // If you added the theme provider earlier, uncomment this:
 // import { ModeToggle } from "@/components/ModeToggle"
+// ===================================================
+
 
 const NAV = [
   { href: "#projects", label: "Projects" },

@@ -1,5 +1,7 @@
 import { Section } from "../components/section"
 import { hobbies } from "../data/hobbies"
+// ===================================================
+
 
 export function Hobbies() {
   return (

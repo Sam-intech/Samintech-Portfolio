@@ -1,6 +1,8 @@
 import { Section } from "../components/section"
 import { posts } from "../data/posts"
 import { Pencil, ArrowUpRight } from "lucide-react"
+// ===================================================
+
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, {

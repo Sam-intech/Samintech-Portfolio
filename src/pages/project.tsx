@@ -5,7 +5,6 @@ import { ArrowLeft, Search } from "lucide-react"
 import { Link } from "react-router-dom"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { Footer } from "../components/footer"
-
 //  ===================================================
 
 type P = typeof projects[number]

@@ -3,6 +3,8 @@ import { projects } from "../data/projects"
 // import { Badge } from "./ui/badge"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 // import { Link } from "react-router-dom"
+// ===================================================
+
 
 export function Projects() {
   return (
@@ -47,7 +49,7 @@ export function Projects() {
               <div className="relative h-full w-full overflow-hidden rounded-2xl bg-[#191919]">
                 {/* Full image: not cropped */}
                 <img
-                  src={p.image}
+                  src={p.cover}
                   alt={p.title}
                   className="absolute inset-0 h-full w-full object-cover"
                 />
